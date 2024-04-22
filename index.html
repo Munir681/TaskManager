@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar and To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="nav-box">
+    <div id="logo-placeholder">Logo Here</div>
+    <h2 id="greeting" style="margin: 0 auto;">Good Day</h2> <!-- Greeting moved here -->
+    <div id="sign-out-container">
+        <button id="sign-out">Sign Out</button>
+    </div>
+</div>
+<div id="time-of-day-banner"></div>
+<div class="container">
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="calendar-days"></div>
+        <div id="calendar-dates"></div>
+    </div>
+    <div id="todo-container">
+        <h2>To-do List</h2> <!-- Header added for the to-do list -->
+        <input type="text" id="new-task" placeholder="Add new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="task-list"></ul>
+    </div>
+    <div id="journal-container">
+        <h2>Daily Reflections</h2>
+        <div class="journal-entry">
+            <label for="intentions">Intentions</label>
+            <textarea id="intentions" placeholder="What are your intentions for today?"></textarea>
+        </div>
+        <div class="journal-entry">
+            <label for="happenings">Happenings</label>
+            <textarea id="happenings" placeholder="What happened today?"></textarea>
+        </div>
+        <div class="journal-entry">
+            <label for="grateful-for">Grateful For</label>
+            <textarea id="grateful-for" placeholder="What are you grateful for today?"></textarea>
+        </div>
+    </div>
+</div>
+
+<!-- Event Input Modal -->
+<div id="event-modal" style="display: none;">
+    <div id="event-modal-content">
+        <span id="close-modal" style="cursor: pointer;">&times;</span>
+        <h2>Add Event</h2>
+        <input type="text" id="event-input" placeholder="Event Details">
+        <div>
+            <label><input type="radio" name="event-color" value="#FFA07A" checked> Salmon</label>
+            <label><input type="radio" name="event-color" value="#7FFFD4"> Aquamarine</label>
+            <label><input type="radio" name="event-color" value="#4682B4"> Steel Blue</label>
+            <label><input type="radio" name="event-color" value="#DA70D6"> Orchid</label>
+        </div>
+      <button id="add-event-btn" onclick="addEvent()">Add</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar and To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="nav-box">
+    <div id="logo-placeholder">Logo Here</div>
+    <h2 id="greeting" style="margin: 0 auto;">Good Day</h2> <!-- Updated greeting location -->
+    <div id="sign-out-container">
+        <button id="sign-out">Sign Out</button>
+    </div>
+</div>
+<div id="time-of-day-banner"></div>
+<div class="container">
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="calendar-days"></div>
+        <div id="calendar-dates"></div>
+    </div>
+    <div id="todo-container">
+        <h2>To-do List</h2> <!-- Added To-do List header -->
+        <input type="text" id="new-task" placeholder="Add new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="task-list"></ul>
+    </div>
+    <div id="journal-container">
+        <h2>Daily Reflections</h2>
+        <div class="journal-entry">
+            <label for="intentions">Intentions</label>
+            <textarea id="intentions" placeholder="What are your intentions for today?"></textarea>
+        </div>
+        <div class="journal-entry">
+            <label for="happenings">Happenings</label>
+            <textarea id="happenings" placeholder="What happened today?"></textarea>
+        </div>
+        <div class="journal-entry">
+            <label for="grateful-for">Grateful For</label>
+            <textarea id="grateful-for" placeholder="What are you grateful for today?"></textarea>
+        </div>
+    </div>
+</div>
+
+<!-- Event Input Modal -->
+<div id="event-modal" style="display: none;">
+    <div id="event-modal-content">
+        <span id="close-modal" style="cursor: pointer;">&times;</span>
+        <h2>Add Event</h2>
+        <input type="text" id="event-input" placeholder="Event Details">
+        <div>
+            <label><input type="radio" name="event-color" value="#FFA07A" checked> Salmon</label>
+            <label><input type="radio" name="event-color" value="#7FFFD4"> Aquamarine</label>
+            <label><input type="radio" name="event-color" value="#4682B4"> Steel Blue</label>
+            <label><input type="radio" name="event-color" value="#DA70D6"> Orchid</label>
+        </div>
+        <button id="add-event-btn">Add</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#logo-placeholder {
+    font-weight: bold;
+}
+
+#time-of-day-banner {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between main content blocks */
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    padding: 20px;
+}
+
+#calendar-container, #todo-container, #journal-container {
+    flex: 1; /* Each container will grow to distribute space */
+    min-width: 300px; /* Prevents the containers from getting too small */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Added bottom margin for spacing */
+}
+
+#calendar-days, #calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day, .calendar-date {
+    padding: 10px;
+}
+
+/* Modal Styles */
+#event-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#event-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+#task-list li, .journal-entry {
+    list-style-type: none;
+    margin-bottom: 20px; /* Adjust spacing for list items and journal entries */
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+}
+
+.task-item p, .journal-entry label {
+    margin: 0;
+    flex-grow: 1;
+    margin-bottom: 5px; /* For journal labels */
+}
+
+.delete-task {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+.journal-entry textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.journal-entry textarea::placeholder {
+    color: #999;
+}

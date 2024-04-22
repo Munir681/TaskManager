@@ -1,0 +1,33 @@
+body{
+    background-color: azure;
+    width: 100%;
+}
+
+
+form{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    padding: 20px;
+     
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    align-self: center;
+    width: 30%;
+    text-align: center;
+}
+
+#buttonLayout{
+
+    text-align: center;
+}
+
